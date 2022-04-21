@@ -12,7 +12,7 @@ export const ProjectsCase = () => {
       <div className="container imageContainer">
         <div className="row">
           <div className="col col-md-6 image">
-            <p>CentroVet</p>
+            <p className='font fontColorPink'>CentroVet</p>
             <a href='https://centrovetnode.herokuapp.com'>
               <img src="https://via.placeholder.com/320X250" alt="Project" onMouseOver={project} />
             </a>
@@ -21,7 +21,7 @@ export const ProjectsCase = () => {
 
         <div className="row">
           <div className="col col-md-6 image">
-            <p>Pista de patín Retro</p>
+            <p className='font fontColorPink'>Pista de patín Retro</p>
             <a href='https://patin.herokuapp.com'>
               <img src="https://via.placeholder.com/320X250" alt="Project" onMouseOver={project} />
             </a>
