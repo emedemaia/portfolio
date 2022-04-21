@@ -1,0 +1,12 @@
+.imageContainer{
+    margin: 30px auto 60px;
+   background-color: red;
+    width: 100%;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.image{
+    text-align: center;
+    
+}

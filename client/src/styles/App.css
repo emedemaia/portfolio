@@ -1,0 +1,108 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Tinos', serif; */
+/* font color:
+ color rosa: #FF88C4;
+hover: #6e1341 
+active: #e5b5cd
+color turquesa: #36BFE3
+*/
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+
+.darkMode{
+    background-color: #1F2626;
+}
+
+.darkMode{
+    background-color: #1F2626;
+}
+
+
+.font {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+}
+
+
+.fontColorLightMode{
+    color: #1F2626;
+}
+
+.fontColorPink{
+    color: #FF88C4;
+}
+
+.fontColorTurquoise{
+    color: #36BFE3;
+}
+
+.fontColorDarkMode{
+    color: #b4e8f5;
+}
+
+button{
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+li {
+    list-style-type: none;
+    height: 50px;
+}
+
+
+
+a {
+   text-decoration: none;
+}
+
+
+
+
+/* para cuando sea web cambiarle display a flex */
+.buttonContact {
+    display: none;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px 13px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, #eb91b1 0%, #f6247c 100%);
+    border-radius: 6px;
+}
+
+.buttonContact:hover {
+    opacity: 0.7;
+}
+
+.buttonContact:active {
+    background: linear-gradient(90deg, #f6247c 0%, #eb91b1 100%);
+    color: #000000;
+}
