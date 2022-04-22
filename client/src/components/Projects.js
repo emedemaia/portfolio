@@ -7,7 +7,7 @@ export const Projects = () => {
     return (
         <>
 
-            <div className="maia font fontColorPink langEn" data-aos="zoom-in" data-aos-duration="1000">
+            <div className="maia font fontColorPink langEn" data-aos="zoom-in" data-aos-duration="1000" id="projects">
                 <h1>Projects</h1>
             </div>
             <div className="maia font fontColorPink langEs hidden" data-aos="zoom-in" data-aos-duration="1000"  >

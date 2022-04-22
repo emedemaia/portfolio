@@ -7,6 +7,7 @@ import { Projects } from './Projects';
 
 
 
+
 export const Main = () => {
 
 
@@ -39,7 +40,7 @@ export const Main = () => {
                     <img src={mujer} className="imgMujer" alt="Mujer Programando" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000" />
                 </div>
 
-                <div className="font fontColorLightMode about langEn" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"  data-aos-duration="1500">
+                <div className="font fontColorLightMode about langEn" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1500">
                     <p>Hello! I'm a FullStack Developer from Argentina</p>
                     <p>I love challenges and giving my best in everything.</p>
                     <p>I learn fast and would love to work with you!</p>
@@ -62,27 +63,7 @@ export const Main = () => {
 
 
                 <Projects />
-
-                <div className="font fontColorLightMode">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vero
-                    illum cum deserunt
-                    dolore amet architecto laborum laboriosam veritatis repellendus nulla sed dicta aut, dolores ullam
-                    voluptatem tenetur reprehenderit unde.</div>
-                <div className="font fontColorLightMode">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi
-                    delectus maxime porro
-                    suscipit neque, quidem eligendi dolores quam dolorum, minus quibusdam quisquam ipsum iure magni placeat
-                    reprehenderit hic et.</div>
-                <div className="font fontColorLightMode">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vero
-                    illum cum deserunt
-                    dolore amet architecto laborum laboriosam veritatis repellendus nulla sed dicta aut, dolores ullam
-                    voluptatem tenetur reprehenderit unde.</div>
-                <div className="font fontColorLightMode">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi
-                    delectus maxime porro
-                    suscipit neque, quidem eligendi dolores quam dolorum, minus quibusdam quisquam ipsum iure magni placeat
-                    reprehenderit hic et.</div>
-                <div className="font fontColorLightMode">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vero
-                    illum cum deserunt
-                    dolore amet architecto laborum laboriosam veritatis repellendus nulla sed dicta aut, dolores ullam
-                    voluptatem tenetur reprehenderit unde.</div>
+               
 
             </main>
         </>

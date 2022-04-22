@@ -1,12 +1,47 @@
-.imageContainer{
+.imageContainer {
     margin: 30px auto 60px;
-   background-color: red;
     width: 100%;
     padding: 0;
-    /* box-sizing: border-box; */
+    border: 1px;
+    border-radius: 50%;
 }
 
-.image{
+.image {
     text-align: center;
-    
+
 }
+
+.modalHeader {
+    padding: 1rem 1rem;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+
+.modalImg{
+    width: 100%;
+}
+
+.modalBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.btnCloseContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnX {
+    padding: 1rem;
+}
+
+.btnXDarkMode{
+    filter: invert(78%) sepia(12%) saturate(5524%) hue-rotate(157deg) brightness(91%) contrast(94%);
+}
+
+/* .btnXDarkMode:hover{
+    color: aliceblue;
+} */

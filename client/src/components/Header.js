@@ -33,6 +33,8 @@ export const Header = () => {
         const menu = document.getElementById("menu")
         const arrowLight = [...document.getElementsByClassName("lightModeArrow")]
         const arrowDark = [...document.getElementsByClassName("darkModeArrow")]
+        const modalContent = document.getElementById("modalContent")
+        const btnCloseModal = document.getElementById("btnCloseModal")
 
         if (moon.classList.contains("hidden")) {
             sun.classList.add("hidden")
@@ -65,6 +67,9 @@ export const Header = () => {
                 element.classList.remove("darkModeArrow")
             })
 
+            modalContent.classList.remove("darkMode")
+            btnCloseModal.classList.remove("btnXDarkMode")
+
         } else {
             moon.classList.add("hidden")
             sun.classList.remove("hidden")
@@ -94,6 +99,9 @@ export const Header = () => {
                 element.classList.remove("lightModeArrow")
                 element.classList.add("darkModeArrow")
             })
+
+            modalContent.classList.add("darkMode")
+            btnCloseModal.classList.add("btnXDarkMode")
 
         }
     }
