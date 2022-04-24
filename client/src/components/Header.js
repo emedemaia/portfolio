@@ -172,6 +172,8 @@ export const Header = () => {
         }
     }
 
+    window.onscroll = menuOut()
+    
 
     return (
         <>

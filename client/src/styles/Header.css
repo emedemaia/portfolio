@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
 }
@@ -8,8 +9,8 @@
 
 .hamb-menu {
     position: relative;
+    z-index: 2;
     display: flex;
-    z-index: 0;
     background-color: #ffffff;
 }
 
@@ -23,32 +24,32 @@
 }
 
 
-.moon{
+.moon {
     position: absolute;
     top: 20px;
-    color:#FF88C4;
-    
+    color: #FF88C4;
+
 }
 
-.sun{
+.sun {
     position: absolute;
     top: 20px;
-    color:#36BFE3;
+    color: #36BFE3;
 }
 
-.langPosition{
+.langPosition {
     position: relative;
-    top:-3px;
+    top: -3px;
     left: 37px;
 }
 
 
-.moon:hover, .sun:hover, .langEnBtn:hover, .langEsBtn:hover{
-    color:#6e1341;
+.moon:hover, .sun:hover, .langEnBtn:hover, .langEsBtn:hover {
+    color: #6e1341;
 }
 
-.moon:active, .sun:active, .langEnBtn:active, .langEsBtn:active{
-    color:#e5b5cd;
+.moon:active, .sun:active, .langEnBtn:active, .langEsBtn:active {
+    color: #e5b5cd;
 }
 
 
@@ -61,13 +62,14 @@
     height: 0px;
     transition: all 0.8s ease;
     padding: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 
-.backgroundTurquoise{
+.backgroundTurquoise {
     background-color: #36BFE3;
 }
+
 .menu-expanded {
     transition: all 0.5s ease;
     top: 42px;
@@ -91,7 +93,7 @@
 
 }
 
-.menuBtn{
+.menuBtn {
     color: #ffffff;
     padding: 10px;
     display: block;

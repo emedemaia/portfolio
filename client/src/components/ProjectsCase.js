@@ -13,11 +13,11 @@ export const ProjectsCase = () => {
     <>
 {/* PROJECT1 */}
    {/* <!-- Button trigger modal --> */}
-      <div className="container imageContainer">
+      <div className="container imageContainer"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#centrovetSite"  >
         <div className="row">
           <div className="col col-md-6 image">
-          <h6 className='font fontColorPink'>CENTROVET</h6>
-            <img src={project1320} alt="Project" data-bs-toggle="modal" data-bs-target="#centrovetSite" />
+          <h6 className='font fontColorPink titleProj'>CENTROVET</h6>
+            <img src={project1320} width="100%" alt="Project"/>
           </div>
         </div>
       </div>
@@ -55,11 +55,11 @@ export const ProjectsCase = () => {
 
 {/* PROJECT2 */}
 {/* <!-- Button trigger modal --> */}
-<div className="container imageContainer">
+<div className="container imageContainer"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#patinSite">
         <div className="row">
           <div className="col col-md-6 image">
-          <h6 className='font fontColorPink'>PISTA DE PATIN RETRO</h6>
-            <img src={project2320} alt="Project" data-bs-toggle="modal" data-bs-target="#patinSite" />
+          <h6 className='font fontColorPink titleProj'>PISTA DE PATIN RETRO</h6>
+            <img src={project2320}  width="100%" alt="Project"  />
           </div>
         </div>
       </div>

@@ -1,8 +1,7 @@
 .maia {
     text-align: center;
-    top: 40px;
     position: relative;
-    z-index: -2;
+    top: 40px;
 }
 
 .dev {
@@ -19,17 +18,15 @@
 }
 
 .about {
-    position: relative;
     margin: 90px auto 60px;
     text-align: center;
-    z-index: -2;
     padding: 10px;
 }
 
 /* ARROW */
 .arrowContainer{
     position: relative;
-    z-index: -2;
+    z-index: 0;
 
     height: 80px;
 }
