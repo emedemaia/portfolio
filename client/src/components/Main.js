@@ -4,6 +4,7 @@ import mujer from "../images/mujerProgramando250x250.png"
 import AOS from "aos"
 import "aos/dist/aos.css";
 import { Projects } from './Projects';
+import { Contact } from './Contact';
 
 
 
@@ -24,17 +25,21 @@ export const Main = () => {
         }
     }
 
+
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+       document.body.onscroll = () =>{
+           menuOut()
+       }
     }, [])
 
     return (
         <>
-            <main onMouseOver={menuOut}>
+            <main onMouseOver={menuOut}  id="scrollingPage">
 
 
-                <div className="maia font fontColorPink" data-aos="fade-up" data-aos-duration="1000">
+                <div className="maia font fontColorPink" data-aos="fade-up" data-aos-duration="1000" >
                     <p className="dev fontColorLightMode">FullStack Developer</p>
                     <h1>Maia I. Elías</h1>
                     <img src={mujer} className="imgMujer" alt="Mujer Programando" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" />
@@ -63,6 +68,8 @@ export const Main = () => {
 
 
                 <Projects />
+
+                <Contact />
                
 
             </main>

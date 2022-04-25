@@ -33,8 +33,11 @@ export const Header = () => {
         const menu = document.getElementById("menu")
         const arrowLight = [...document.getElementsByClassName("lightModeArrow")]
         const arrowDark = [...document.getElementsByClassName("darkModeArrow")]
-        const modalContent = document.getElementById("modalContent")
-        const btnCloseModal = document.getElementById("btnCloseModal")
+        const modalContent = [...document.getElementsByClassName("modalContent")]
+        const btnCloseModal = [...document.getElementsByClassName("btnCloseModal")]
+        const btn = [...document.getElementsByClassName("btn")]
+        const imageContainer = [...document.getElementsByClassName("imageContainer")]
+        const titleProj = [...document.getElementsByClassName("titleProj")]
 
         if (moon.classList.contains("hidden")) {
             sun.classList.add("hidden")
@@ -67,8 +70,25 @@ export const Header = () => {
                 element.classList.remove("darkModeArrow")
             })
 
-            modalContent.classList.remove("darkMode")
-            btnCloseModal.classList.remove("btnXDarkMode")
+            modalContent.forEach((element)=>{
+                element.classList.remove("darkMode")
+            })
+          
+            btnCloseModal.forEach((element)=>{
+                element.classList.remove("btnXDarkMode")
+            }) 
+            
+            btn.forEach((element)=>{
+                element.classList.remove("btnDarkMode")
+            })
+
+            imageContainer.forEach((element)=>{
+                element.classList.remove("imageContainerDarkM")
+            })
+
+            titleProj.forEach((element)=>{
+                element.classList.remove("titleProjDark")
+            })
 
         } else {
             moon.classList.add("hidden")
@@ -79,6 +99,8 @@ export const Header = () => {
             fontColorPink.forEach((element)=>{
                 element.classList.add("fontColorTurquoise")
             })
+
+          
           
             fontColorLightMode.forEach((element)=>{
                 element.classList.add("fontColorDarkMode")
@@ -100,9 +122,25 @@ export const Header = () => {
                 element.classList.add("darkModeArrow")
             })
 
-            modalContent.classList.add("darkMode")
-            btnCloseModal.classList.add("btnXDarkMode")
+            modalContent.forEach((element)=>{
+                element.classList.add("darkMode")
+            })
 
+            btnCloseModal.forEach((element)=>{
+                element.classList.add("btnXDarkMode")
+            }) 
+
+            btn.forEach((element)=>{
+                element.classList.add("btnDarkMode")
+            })
+
+            imageContainer.forEach((element)=>{
+                element.classList.add("imageContainerDarkM")
+            })
+
+            titleProj.forEach((element)=>{
+                element.classList.add("titleProjDark")
+            })
         }
     }
 
@@ -172,9 +210,7 @@ export const Header = () => {
         }
     }
 
-    window.onscroll = menuOut()
     
-
     return (
         <>
             <header>
