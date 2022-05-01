@@ -263,7 +263,7 @@ export const Header = () => {
                             <li className="font langEn"> <a href="#projects" className='menuBtn fontColorWhite' onClick={menuOut}>Projects</a> </li>
                             <li className="font langEn"> <a href="#contact" className='menuBtn fontColorWhite' onClick={menuOut}>Contact</a> </li>
                             <li className="font langEs hidden"> <a href="#home" className='menuBtn fontColorWhite' onClick={menuOut}>Home</a> </li>
-                            <li className="font langEs hidden"> <a href="#projects" className='menuBtn' onClick={menuOut}>Proyectos</a> </li>
+                            <li className="font langEs hidden"> <a href="#projects" className='menuBtn fontColorWhite' onClick={menuOut}>Proyectos</a> </li>
                             <li className="font langEs hidden"> <a href="#contact" className='menuBtn fontColorWhite' onClick={menuOut}>Contacto</a> </li>
                         </ul>
                     </nav>

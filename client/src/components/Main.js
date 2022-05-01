@@ -6,6 +6,7 @@ import AOS from "aos"
 import "aos/dist/aos.css";
 import { Projects } from './Projects';
 import { Contact } from './Contact';
+import { Skills } from './Skills'
 
 
 
@@ -53,18 +54,24 @@ export const Main = () => {
                                 src={mujer250} className="imgMujer" alt="Mujer Programando" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" />
                         </div>
 
-                        <div className="font fontColorLightMode about langEn col-12 col-md-6 col-lg-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
-                            <p>Hello! I'm a FullStack Developer from Argentina</p>
-                            <p>I love challenges and giving my best in everything.</p>
-                            <p>I learn fast and would love to work with you!</p>
-                        </div>
+                        <div className="font fontColorLightMode about col-12 col-md-7 col-lg-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
+                            <div className='langEn'>
+                                <p>Hello! I'm a FullStack Developer from Argentina.</p>
+                                <p>I love challenges and giving my best in everything.</p>
+                                <p>I learn fast and would love to work with you!</p>
+                            </div>
 
-                        <div className="font fontColorLightMode about langEs col-12 col-md-6 col-lg-5 hidden" id="langEs" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
-                            <p>¡Hola! Soy una Desarrolladora FullStack de Argentina.</p>
-                            <p>Amo los desafíos y dar lo mejor de mí en todo.</p>
-                            <p>Aprendo rápido y ¡me encantaría trabajar con vos!.</p>
+                            <div className='langEs hidden'>
+                                <p>¡Hola! Soy una Desarrolladora FullStack de Argentina.</p>
+                                <p>Amo los desafíos y dar lo mejor de mí en todo.</p>
+                                <p>Aprendo rápido y ¡me encantaría trabajar con vos!.</p>
+                            </div>
+                            <div className='contactAbout'>
+                                <Contact />
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div className='arrowContainer'>
                     <div className="arrow">
@@ -77,9 +84,22 @@ export const Main = () => {
 
 
                 <Projects />
+                <Skills />
+                
+                <div id="contact"></div>
 
-                <Contact />
+                <div className="maia font fontColorPink langEn" data-aos="zoom-in" data-aos-duration="500">
+                    <h1>Contact</h1>
+                </div>
+                <div className="maia font fontColorPink langEs hidden" data-aos="zoom-in" data-aos-duration="500"  >
+                    <h1>Contacto</h1>
+                </div>
 
+                <div className="font fontColorLightMode text" data-aos="fade-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-duration="500">
+                    <p className='langEn'>Any Questions?</p>
+                    <p className='langEs hidden'>¿Alguna pregunta?</p>
+                    <Contact />
+                </div>
 
             </main>
         </>

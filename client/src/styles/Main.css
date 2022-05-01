@@ -25,6 +25,10 @@
     padding: 10px;
 }
 
+.contactAbout{
+    display: none;
+}
+
 /* ARROW */
 .arrowContainer {
     position: relative;
@@ -86,12 +90,11 @@
 }
 
 
-
 @media screen and (min-width: 768px) {
   .imgMujer{
       width: 100%;
       position: relative;
-      top:-27px;
+      top:-85px;
   }
 
     .presentation {
@@ -107,44 +110,54 @@
         text-align: left;
     }
 
+    .contactAbout{
+        margin-top: 20px;
+        display: block;
+    }
+
     .maiaTitle{
         position: relative;
-        left:-229%;
-        top: 70px;
+        left:-230%;
+        top: 33px;
     }
 
     .dev{
         position: relative;
         left:-242%;
-        top:83px;
+        top:45px;
         font-size: 0.8em;
     }
+
 
 }
 
 @media screen and (min-width: 996px){
 .dev {
     left:-244%;
-    top:190px;  
+    top:110px;  
 }
 
 .maiaTitle {
     font-size: 2em;
     left:-239%;
-    top: 171px;
+    top: 95px;
 }
 }
 
 @media screen and (min-width: 1200px){
     .dev {
         left:-246%;
-        top:225px;  
+        top:140px;  
         font-size: 0.7em;
     }
     
     .maiaTitle {
         font-size: 1.6em;
         left:-244%;
-        top: 210px;
+        top: 120px;
+    }
+
+    .imgMujer{
+        top:-45px;
     }
     }
