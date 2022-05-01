@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import "../styles/Main.css"
-import mujer from "../images/mujerProgramando250x250.png"
+import mujer250 from "../images/mujerProgramando250x250.png"
+import mujer560 from "../images/mujerProgramando560.png"
 import AOS from "aos"
 import "aos/dist/aos.css";
 import { Projects } from './Projects';
@@ -29,34 +30,42 @@ export const Main = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
-       document.body.onscroll = () =>{
-           menuOut()
-       }
+        document.body.onscroll = () => {
+            menuOut()
+        }
     }, [])
 
     return (
         <>
-            <main onMouseOver={menuOut}  id="scrollingPage">
+            <main onMouseOver={menuOut} id="scrollingPage">
 
+                <div className='container '>
+                    <div className='row presentation'>
+                        <div className="maia font fontColorPink col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000" >
+                            <p className="dev fontColorLightMode">FULLSTACK DEVELOPER</p>
+                            <p className='maiaTitle'>Maia I. Elías</p>
+                            <img srcSet={`${mujer250}  250w,
+                   ${mujer560} 560w`}
 
-                <div className="maia font fontColorPink" data-aos="fade-up" data-aos-duration="1000" >
-                    <p className="dev fontColorLightMode">FullStack Developer</p>
-                    <h1>Maia I. Elías</h1>
-                    <img src={mujer} className="imgMujer" alt="Mujer Programando" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" />
+                                sizes='(max-width: 768px) 250px,
+                    300px'
+
+                                src={mujer250} className="imgMujer" alt="Mujer Programando" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" />
+                        </div>
+
+                        <div className="font fontColorLightMode about langEn col-12 col-md-6 col-lg-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
+                            <p>Hello! I'm a FullStack Developer from Argentina</p>
+                            <p>I love challenges and giving my best in everything.</p>
+                            <p>I learn fast and would love to work with you!</p>
+                        </div>
+
+                        <div className="font fontColorLightMode about langEs col-12 col-md-6 col-lg-5 hidden" id="langEs" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
+                            <p>¡Hola! Soy una Desarrolladora FullStack de Argentina.</p>
+                            <p>Amo los desafíos y dar lo mejor de mí en todo.</p>
+                            <p>Aprendo rápido y ¡me encantaría trabajar con vos!.</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div className="font fontColorLightMode about langEn" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
-                    <p>Hello! I'm a FullStack Developer from Argentina</p>
-                    <p>I love challenges and giving my best in everything.</p>
-                    <p>I learn fast and would love to work with you!</p>
-                </div>
-
-                <div className="font fontColorLightMode about langEs hidden" id="langEs" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
-                    <p>¡Hola! Soy una Desarrolladora FullStack de Argentina.</p>
-                    <p>Amo los desafíos y dar lo mejor de mí en todo.</p>
-                    <p>Aprendo rápido y ¡me encantaría trabajar con vos!.</p>
-                </div>
-
                 <div className='arrowContainer'>
                     <div className="arrow">
                         <span className='lightModeArrow'></span>
@@ -70,7 +79,7 @@ export const Main = () => {
                 <Projects />
 
                 <Contact />
-               
+
 
             </main>
         </>

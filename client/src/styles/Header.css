@@ -1,11 +1,14 @@
 .header {
-    width: 100%;
     position: fixed;
     z-index: 3;
     top: 0;
     left: 0;
+    padding: 0;
 }
 
+.nopadding {
+    padding: 0;
+}
 
 .hamb-menu {
     position: relative;
@@ -17,38 +20,43 @@
 
 .name {
     background-color: transparent;
-    padding: 10px 15px;
+    position: relative;
+    left: 12%;
+    top: 5px;
+    padding: 10px;
     margin: 0 0;
-    width: 210px;
     text-align: center;
 }
 
 
 .moon {
-    position: absolute;
-    top: 20px;
+    position: relative;
+    /* top: 21px; */
     color: #FF88C4;
+    padding: 0;
 
 }
 
 .sun {
-    position: absolute;
-    top: 20px;
+    position: relative;
+    /* top: 21px; */
     color: #36BFE3;
 }
 
+
 .langPosition {
     position: relative;
-    top: -3px;
-    left: 37px;
+    top: 3px;
+    height: 25px;
+    width: 22px;
 }
 
 
-.moon:hover, .sun:hover, .langEnBtn:hover, .langEsBtn:hover {
+.moon:hover, .sun:hover, .langBtn:hover {
     color: #6e1341;
 }
 
-.moon:active, .sun:active, .langEnBtn:active, .langEsBtn:active {
+.moon:active, .sun:active, .langBtn:active {
     color: #e5b5cd;
 }
 
@@ -102,4 +110,140 @@
 
 .menuBtn:active {
     color: #ffc62a;
+}
+
+
+@media screen and (min-width: 576px) {
+
+
+    .moon {
+        left: 200%;
+    }
+
+    .sun {
+        left: 200%;
+    }
+
+
+    .langPosition {
+        left: 50%;
+
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .hamb-menu {
+        background-color: #FF88C4;
+        padding: 10px;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .moon {
+        left: 400%;
+
+    }
+
+    .sun {
+        left: 400%;
+
+    }
+
+    .moon:hover, .sun:hover, .langBtn:hover, .menuBtn:hover {
+        color:#ffffff;
+    }
+    
+    .moon:active, .sun:active, .langBtn:active, .menuBtn:active {
+        color:darkblue;
+    }
+
+    .menu {
+        top: 0px;
+        z-index: 2;
+        height: 0px;
+        position: relative;
+        transition: none;
+    }
+
+    .ul {
+        display: flex;
+        top: -42px;
+        transition: none;
+    }
+
+    .name {
+     display: none;
+    }
+
+    .langPosition {
+        left: 80%;
+      
+    }
+
+ 
+
+}
+
+@media screen and (min-width: 992px) {
+  
+ 
+    .moon {
+        left: 560%;
+        font-size: 24px;
+    }
+
+    .sun {
+        left: 560%;
+        font-size: 24px;
+    }
+
+  
+    .langPosition {
+        left: 90%;
+      
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .moon {
+        left: 680%;
+
+    }
+
+    .sun {
+        left: 680%;
+
+    }
+
+
+
+    .langPosition {
+        height: 35px;
+        width: 35px;
+
+    }
+
+    .ul{
+        top:-51px;
+    }
+
+
+}
+
+@media screen and (min-width: 1400px) {
+    .moon {
+        left: 700%;
+    }
+
+    .sun {
+        left: 700%;
+    }
 }

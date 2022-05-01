@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Maiainfografias';
+    font-style: normal;
+    font-weight: normal;
+    src: url('Maiainfografias.ttf');
+    }
+  
+
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Tinos', serif; */
 /* font color:
@@ -23,11 +31,12 @@ body {
 
 
 .font {
-    font-family: 'Montserrat';
+    font-family: 'Maiainfografias';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 20px;
+    /* font-weight: 400; */
+    font-size: 1.3em;
+    line-height: 25px;
 }
 
 
@@ -78,28 +87,34 @@ a {
 
 
 
+@media screen and (min-width: 768px){
+    .fontColorWhite{
+        color: #ffffff;
+    }
 
-/* para cuando sea web cambiarle display a flex */
-.buttonContact {
-    display: none;
-    /* display: flex; */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 20px 13px;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
+    .fontColorHeaderDark{
+        color: #1F2626;
+    }
 
-    background: linear-gradient(90deg, #eb91b1 0%, #f6247c 100%);
-    border-radius: 6px;
+    .hamb-menuDark{
+        background-color: #36BFE3;
+    }
+
 }
 
-.buttonContact:hover {
-    opacity: 0.7;
+
+@media screen and (min-width: 1200px){
+    .font{
+        font-size: 1.4em;
+        line-height: 30px;
+    }
+    
+
 }
 
-.buttonContact:active {
-    background: linear-gradient(90deg, #f6247c 0%, #eb91b1 100%);
-    color: #000000;
+@media screen and (min-width: 1400px){
+    .font{
+     
+        line-height: 40px;
+    }
 }
