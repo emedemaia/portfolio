@@ -61,7 +61,6 @@
 }
 
 
-
 .menu {
     background-color: #FF88C4;
     position: absolute;
@@ -138,7 +137,6 @@
 
     .hamb-menu {
         background-color: #FF88C4;
-        padding: 10px;
     }
 
 
@@ -226,13 +224,13 @@
 
 
     .langPosition {
-        height: 35px;
+        height: 46px;
         width: 35px;
 
     }
 
     .ul{
-        top:-51px;
+        top:-46px;
     }
 
 
@@ -245,5 +243,9 @@
 
     .sun {
         left: 700%;
+    }
+
+    .ul{
+        top:-51px;
     }
 }

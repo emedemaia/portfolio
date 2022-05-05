@@ -27,13 +27,23 @@ export const Main = () => {
         }
     }
 
+    const topPage = () => {
+        const top = document.getElementById("topPage")
+        if (document.documentElement.scrollTop > 150) {
+           top.classList.add("topPageColor");
+        }else{
+            top.classList.remove("topPageColor");
+           }
+    }
 
     useEffect(() => {
         AOS.init();
         AOS.refresh();
         document.body.onscroll = () => {
             menuOut()
+            topPage()
         }
+      
     }, [])
 
     return (
@@ -85,7 +95,7 @@ export const Main = () => {
 
                 <Projects />
                 <Skills />
-                
+
                 <div id="contact"></div>
 
                 <div className="maia font fontColorPink langEn" data-aos="zoom-in" data-aos-duration="500">
@@ -99,6 +109,11 @@ export const Main = () => {
                     <p className='langEn'>Any Questions?</p>
                     <p className='langEs hidden'>¿Alguna pregunta?</p>
                     <Contact />
+                </div>
+
+                <div>
+                    <a href="#home">
+                        <span className="iconify topPage topPageTransparent" data-icon="bi:arrow-up-circle-fill" id='topPage'></span></a>
                 </div>
 
             </main>

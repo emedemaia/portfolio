@@ -39,6 +39,7 @@ export const Header = () => {
         const imageContainer = [...document.getElementsByClassName("imageContainer")]
         const titleProj = [...document.getElementsByClassName("titleProj")]
         const fontColorWhite = [...document.getElementsByClassName("fontColorWhite")]
+        const footer = document.getElementById("footer")
 
 
         if (moon.classList.contains("hidden")) {
@@ -97,6 +98,8 @@ export const Header = () => {
                 element.classList.remove("fontColorHeaderDark")
             })
 
+            footer.classList.remove("backgroundTurquoise")
+
         } else {
             moon.classList.add("hidden")
             sun.classList.remove("hidden")
@@ -153,6 +156,9 @@ export const Header = () => {
             fontColorWhite.forEach((element) => {
                 element.classList.add("fontColorHeaderDark")
             })
+
+            footer.classList.add("backgroundTurquoise")
+            
         }
     }
 
