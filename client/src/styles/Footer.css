@@ -23,12 +23,14 @@ mask-repeat: no-repeat;
     color: #725e5e;
 }
 
+
+
 @media screen and (min-width: 768px) {
     .bgFooterPink {
         background-color: #FF88C4;
     }
 
-    .backgroundTurquoise {
+    .backgroundTurquoiseFooter {
         background-color: #36BFE3;
     }
 

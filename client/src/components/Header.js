@@ -98,7 +98,7 @@ export const Header = () => {
                 element.classList.remove("fontColorHeaderDark")
             })
 
-            footer.classList.remove("backgroundTurquoise")
+            footer.classList.remove("backgroundTurquoiseFooter")
 
         } else {
             moon.classList.add("hidden")
@@ -157,8 +157,8 @@ export const Header = () => {
                 element.classList.add("fontColorHeaderDark")
             })
 
-            footer.classList.add("backgroundTurquoise")
-            
+            footer.classList.add("backgroundTurquoiseFooter")
+
         }
     }
 
