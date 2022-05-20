@@ -53,7 +53,7 @@ export const Main = () => {
                 <div className='container '>
                     <div className='row presentation'>
                         <div className="maia font fontColorPink col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000" >
-                            <p className="dev fontColorLightMode">FULLSTACK DEVELOPER</p>
+                            <p className="dev fontColorLightMode">FULL STACK DEVELOPER</p>
                             <p className='maiaTitle'>Maia I. Elías</p>
                             <img srcSet={`${mujer250}  250w,
                    ${mujer560} 560w`}
@@ -66,13 +66,13 @@ export const Main = () => {
 
                         <div className="font fontColorLightMode about col-12 col-md-7 col-lg-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
                             <div className='langEn'>
-                                <p>Hello! I'm a FullStack Developer from Argentina.</p>
+                                <p>Hello! I'm a Full Stack Developer from Argentina.</p>
                                 <p>I love challenges and giving my best in everything.</p>
-                                <p>I learn fast and would love to work with you!</p>
+                                <p>I'm a fast learner and would love to work with you!</p>
                             </div>
 
                             <div className='langEs hidden'>
-                                <p>¡Hola! Soy una Desarrolladora FullStack de Argentina.</p>
+                                <p>¡Hola! Soy una Desarrolladora Full Stack de Argentina.</p>
                                 <p>Amo los desafíos y dar lo mejor de mí en todo.</p>
                                 <p>Aprendo rápido y ¡me encantaría trabajar con vos!.</p>
                             </div>
